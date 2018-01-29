@@ -18,10 +18,11 @@ massive(process.env.CONNECTION_STRING)
 const db = app.get('db');
 
 
+
 app.get('/api/getfollowingfeed/:id', feedCtrl.getFollowingFeed);
 
 app.post(`/api/checkuser`, userCtrl.checkUser)
 
-const port = 6969;
+const port = 3030;
 
 app.listen(port, () => console.log(`show me the money ${port}`));
